@@ -1,3 +1,7 @@
+# Don't upload private data
+data/*
+!data/sample.json
+
 # Logs
 logs
 *.log
