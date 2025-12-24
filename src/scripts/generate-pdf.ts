@@ -22,14 +22,20 @@ async function main() {
   const dataSrc = await fs.readFile(dataPath, 'utf8');
   const data = JSON.parse(dataSrc) as Record<string, unknown>;
 
-  // 5) Write HTML for Prince
+  const kebabName = (data['name'] as string)
+    .toLowerCase()
+    .replaceAll(/\s+/g, '-');
+
+  const year = new Date().getFullYear();
+
+  // Write HTML for Prince
   const outDir = path.join(root, 'out');
   await fs.mkdir(outDir, { recursive: true });
 
   const htmlPath = path.join(outDir, 'document-ua.html');
-  const pdfPath = path.join(outDir, 'document-ua.pdf');
+  const pdfPath = path.join(outDir, `${kebabName}-cv-ua-${year}.pdf`);
 
-  // 6) Generate PDF/UA-1 (Tagged PDF → StructTreeRoot)
+  // Generate PDF/UA-1 (Tagged PDF → StructTreeRoot)
   // Tagged PDF is automatically enabled with PDF/UA-1 profile. :contentReference[oaicite:1]{index=1}
   await execFileAsync('prince', [
     htmlPath,
@@ -37,7 +43,7 @@ async function main() {
     pdfPath,
     '--pdf-profile=PDF/UA-1',
     '--pdf-title',
-    `${data['name']}-curriculum vitae`,
+    `${data['name']} CV ${year}`,
     '--pdf-author',
     data['name'] as string,
     '--pdf-keywords',
