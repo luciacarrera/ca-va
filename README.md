@@ -23,3 +23,11 @@ If you wish to add features that are not available in the template I recommend y
 5. Execute `npm run pdf:custom`
 6. Edit the html to your liking in `out/document-ua.html`
 7. Then `npm run build:pdf`.
+
+## Check compliance
+
+I would hope you don't blindly trust my program and want to check that it is actually accessible, so here are some free online resources:
+
+- Checks that it meets PDF/UA && WCAG requirements: [axesCheck](https://check.axes4.com/en/)
+- Checks that it meets WCAG color contrast AA & AAA levels on `Firefox`: [WCAG Color contrast checker](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/)
+- Checks that it meets WCAG color contrast AA & AAA levels on `Chrome`: [WCAG Color contrast checker](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf?hl=es)
