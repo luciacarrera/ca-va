@@ -21,6 +21,11 @@ module.exports = {
         text: 'rgb(var(--text) / <alpha-value>)',
         'text-footer': 'rgb(var(--text-footer) / <alpha-value>)',
       },
+      spacing: {
+        'page-x': 'var(--page-x)',
+        'page-y': 'var(--page-y)',
+        content: 'var(--content)',
+      },
     },
   },
   plugins: [],

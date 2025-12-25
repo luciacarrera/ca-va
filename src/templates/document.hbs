@@ -27,7 +27,7 @@
     </div>
     {{/if}}
     
-    <header class="bg-header mt-4 col-span-4 text-justify pt-10 pl-8 pr-12 flex flex-col gap-4 justify-center">
+    <header class="bg-header mt-4 col-span-4 text-justify pt-page-y pl-content pr-page-x flex flex-col gap-4 justify-center">
         <div class="flex flex-col gap-1">
             <h1 class="bg-name text-3xl font-bold">{{name}}</h1>
             <p class="bg-brief-description text-lg">{{briefDescription}}</p>
@@ -54,11 +54,11 @@
         {{/if}}
     </header>
     
-    <aside aria-label="{{aside.label}}" class="col-span-2 pb-10 pl-12 pr-8 pt-2 bg-aside h-full">
+    <aside aria-label="{{aside.label}}" class="col-span-2 pb-page-y pl-page-x pr-content pt-2 bg-aside h-full">
         {{> content content=aside.content contentFooter=footer isMain=false}}
     </aside>
     
-    <main class="col-span-4 pr-12 pl-8 pb-10 pt-2 h-full bg-main">
+    <main class="col-span-4 pr-page-x pl-content pb-page-y pt-2 h-full bg-main">
         {{> content content=main.content isMain=true}}
     </main>
 </body>

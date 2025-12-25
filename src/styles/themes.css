@@ -16,9 +16,16 @@
   /* text colors */
   --text: 31 41 55;
   --text-footer: 30 41 59;
+
+  /** page padding **/
+  --page-y: 40px;
+  --page-x: 48px;
+
+  /** content padding **/
+  --content: 32px;
 }
 
-[data-theme='grass'] {
+[data-theme='grass-aside'] {
   /* background colors */
   --photo: 21 128 61 / 0.5;
   --aside: 21 128 61 / 0.5;
@@ -35,4 +42,7 @@
   /* text colors */
   --text: 31 41 55;
   --text-footer: 30 41 59;
+
+  /** content padding **/
+  --content: 32px;
 }
