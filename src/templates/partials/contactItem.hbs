@@ -1,0 +1,9 @@
+<div class="flex gap-1 items-center">
+  {{#if icon}}
+    <img src="{{icon.src}}" alt="{{icon.alt}}" class="w-5 h-5" />
+  {{/if}}
+  <p>{{#if href}}<a
+        href="{{href}}"
+        class="underline underline-offset-2"
+      >{{value}}</a>{{else}}{{value}}{{/if}}</p>
+</div>

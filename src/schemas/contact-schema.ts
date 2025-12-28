@@ -5,6 +5,7 @@ export const contactSchema = {
   properties: {
     icon: assetSchema,
     value: { type: 'string' },
+    href: { type: 'string' },
   },
   required: ['value'],
 };

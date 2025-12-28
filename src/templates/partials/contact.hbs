@@ -1,0 +1,5 @@
+<div class="px-1 text-sm flex gap-2 justify-between">
+    {{#each contact }}
+      {{> contactItem icon=this.icon href=this.href value=this.value }}
+    {{/each}}
+</div>

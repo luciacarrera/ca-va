@@ -7,16 +7,18 @@
     "alt": "Professional photograph of Princess Daisy"
   },
   "footer": "This CV has been designed using CAVA templates, prioritizing accessibility.",
-  "contact": {
-    "email": {
+  "contact": [
+    {
       "icon": { "src": "assets/email.svg", "alt": "Email" },
+      "href": "mailto:",
       "value": "daisy@kart.com"
     },
-    "phone": {
+    {
       "icon": { "src": "assets/phone.svg", "alt": "Mobile" },
+      "href": "tel:",
       "value": "+81 001 22 44 55"
     }
-  },
+  ],
   "aside": {
     "label": "Additional Information",
     "content": [

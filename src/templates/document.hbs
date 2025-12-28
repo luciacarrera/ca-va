@@ -33,24 +33,7 @@
             <p class="p-1 bg-brief-description text-lg rounded-all-headers w-brief-description">{{briefDescription}}</p>
         </div>
         {{#if contact}}
-        <div class="px-1 text-sm flex gap-2 justify-between">
-            {{#if contact.email}}
-            <div class="flex gap-1 items-center">
-                {{#if contact.email.icon}}
-                <img src="{{contact.email.icon.src}}" alt="{{contact.email.icon.alt}}" class="w-5 h-5" />
-                {{/if}}
-                <p><a href="mailto:{{contact.email.value}}" class="underline underline-offset-2">{{contact.email.value}}</a></p>
-            </div>
-            {{/if}}
-            {{#if contact.phone}}
-            <div class="flex gap-1 items-center">
-                {{#if contact.phone.icon}}
-                <img src="{{contact.phone.icon.src}}" alt="{{contact.phone.icon.alt}}" class="w-5 h-5" />
-                {{/if}}
-                <p><a href="tel:{{contact.phone.value}}" class="underline underline-offset-2">{{contact.phone.value}}</a></p>
-            </div>
-            {{/if}}
-        </div>
+        {{> contact contact=contact}}
         {{/if}}
     </header>
     

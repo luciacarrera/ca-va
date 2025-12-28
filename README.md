@@ -61,6 +61,18 @@ I would hope you don't blindly trust my program and want to check that it is act
 - Checks that it meets WCAG color contrast AA & AAA levels on `Firefox`: [WCAG Color contrast checker](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/)
 - Checks that it meets WCAG color contrast AA & AAA levels on `Chrome`: [WCAG Color contrast checker](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf?hl=es)
 
+## Recommended contact hrefs
+
+`href` are links that will be "underneath" the value of your contact value. For example, this will make the email clickable and it will redirect the user to send an email. I recommend the following `href`'s according to the contact type you input:
+
+| Contact type | href         |
+| ------------ | ------------ |
+| email        | mailto:VALUE |
+| phone        | tel:VALUE    |
+
+> [!NOTE]
+> Substitute VALUE for your email/phone.
+
 ## Can I remove the Prince (horizontal P) logo?
 
 Yes if you buy a Prince license or if you replace the prince pdf/ua tagged generator for another one.

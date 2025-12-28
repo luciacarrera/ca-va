@@ -12,11 +12,8 @@ export const cvSchema = {
     photo: assetSchema,
     footer: { type: 'string' },
     contact: {
-      type: 'object',
-      properties: {
-        email: contactSchema,
-        phone: contactSchema,
-      },
+      type: 'array',
+      items: contactSchema,
     },
     aside: {
       type: 'object',
