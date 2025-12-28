@@ -26,6 +26,9 @@ module.exports = {
         'page-y': 'var(--page-y)',
         content: 'var(--content)',
       },
+      borderRadius: {
+        headers: 'var(--rounded-headers)',
+      },
     },
   },
   plugins: [],

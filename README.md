@@ -1,6 +1,6 @@
 # CA-VA templates
 
-Curriculum Aesthetic - Vitally Accessibile templates.
+Curriculum Aesthetic - Vitally Accessible templates.
 
 Making curriculums cute without forgetting about all our visually impaired internet friends.
 
@@ -16,9 +16,37 @@ Making curriculums cute without forgetting about all our visually impaired inter
 4. If you wish to include a photo add it to the `out/assets` folder and add pathname to `sample.json`.
 5. Execute `npm run pdf`
 
-## How to (complex/custom)
+## How to make your own theme
 
-If you wish to add features that are not available in the template I recommend you do steps 1-4 from the How to (simple) then.
+1. Go to `styles/themes.css`
+2. Fill in the `data-theme: custom` to your liking
+
+Variables available for modification:
+
+| Variable            | Tailwind token         | Description                                          |
+| ------------------- | ---------------------- | ---------------------------------------------------- |
+| --photo             | bg-photo               | changes photo background colour                      |
+| --aside             | bg-aside               | changes aside background colour                      |
+| --main              | bg-main                | changes main background colour                       |
+| --header            | bg-header              | changes header background colour                     |
+| --main-headers      | bg-main-headers        | changes headers in main content's background colour  |
+| --aside-headers     | bg-aside-headers       | changes headers in aside content's background colour |
+| --name              | bg-name                | changes your name's background colour                |
+| --brief-description | bg-brief-description   | changes your brief description's background colour   |
+| --text              | text-text              | changes all the normal text's colour                 |
+| --text-footer       | text-text-footer       | changes the footer's text colour                     |
+| --content           | pl-content, pr-content | changes padding between aside and main content       |
+| --                  |                        |                                                      |
+| --                  |                        |                                                      |
+| --                  |                        |                                                      |
+| --                  |                        |                                                      |
+
+> [!CAUTION]
+> Technically `--page-x` and `--page-y` tokens are available for modification but I recommend you do not modify them as your cv might not be printable.
+
+## How to modify the html then generate the pdf
+
+I recommend creating your own theme instead of this, but if you wish to add features directly to the html, you should do steps 1-4 from the How to (simple) then:
 
 5. Execute `npm run pdf:custom`
 6. Edit the html to your liking in `out/document-ua.html`
