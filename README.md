@@ -60,3 +60,7 @@ I would hope you don't blindly trust my program and want to check that it is act
 - Checks that it meets PDF/UA && WCAG requirements: [axesCheck](https://check.axes4.com/en/)
 - Checks that it meets WCAG color contrast AA & AAA levels on `Firefox`: [WCAG Color contrast checker](https://addons.mozilla.org/en-US/firefox/addon/wcag-contrast-checker/)
 - Checks that it meets WCAG color contrast AA & AAA levels on `Chrome`: [WCAG Color contrast checker](https://chromewebstore.google.com/detail/wcag-color-contrast-check/plnahcmalebffmaghcpcmpaciebdhgdf?hl=es)
+
+## Can I remove the Prince (horizontal P) logo?
+
+Yes if you buy a Prince license or if you replace the prince pdf/ua tagged generator for another one.
