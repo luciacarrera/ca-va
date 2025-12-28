@@ -1,8 +1,8 @@
 /* Default theme (fallback) */
 :root {
   /* background colors */
-  --bg-photo: 0 0 0 / 0;
-  --bg-aside: 0 0 0 / 0;
+  --bg-photo: 21 128 61 / 0.5;
+  --bg-aside: 21 128 61 / 0.5;
   --bg-main: 0 0 0 / 0;
   --bg-header: 0 0 0 / 0;
 

@@ -20,31 +20,35 @@
 
 </head>
 
-<body class="min-h-screen font-sans grid grid-cols-6 tracking-tight grid-rows-[auto_1fr] text-normal py-page-y px-page-x">
+<body class="min-h-screen font-sans grid grid-cols-6 tracking-tight grid-rows-[auto_1fr] text-normal">
 
 {{#if (eq layout "E")}}
-    <header class="h-32 bg-header pl-content row-start-1 col-start-3 col-span-4 text-justify flex flex-col gap-2">
+    <header class="bg-header h-[10.5rem] pl-content pt-page-y px-page-x row-start-1 col-start-3 col-span-4 text-justify flex flex-col gap-2">
         {{> header name=name briefDescription=briefDescription contact=contact}}
     </header>  
 
-    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pr-content bg-aside">
+    <main class="col-span-4 col-start-3 row-start-2 pb-page-y pr-page-x pt-content pl-content bg-main">
+        {{> content content=main.content isMain=true }}
+    </main>
+
+    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pr-content pt-page-y pb-page-y pl-page-x bg-aside">
         {{> content content=aside.content contentFooter=footer isMain=false profilePhoto=photo }}
     </aside>
 
-    <main class="col-span-4 col-start-3 row-start-2 pt-content pl-content bg-main">
-        {{> content content=main.content isMain=true }}
-    </main>
 {{else}}
 
-    <header class="max-h-36 bg-header col-span-6 text-justify pt-page-y pl-content pr-page-x flex flex-col gap-2 justify-center">
-        {{> header name=name briefDescription=briefDescription contact=contact photo=photo}}
-    </header>
-    <main class="col-span-4 pr-page-x pl-content py-page-y h-full bg-main">
-        {{> content content=main.content isMain=true photo=photo}}
+    <header class="bg-header pb-content pt-page-y px-page-x col-span-6 text-justify flex flex-col gap-2">
+        {{> header name=name briefDescription=briefDescription contact=contact}}
+    </header>  
+
+    <main class="col-span-4 col-start-3 row-start-2 pl-content pb-page-y pr-page-x bg-main">
+        {{> content content=main.content isMain=true }}
     </main>
-    <aside aria-label="{{aside.label}}" class="col-span-2 py-page-y pl-page-x pr-content bg-aside h-full">
+
+    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pr-content pb-page-y pl-page-x bg-aside">
         {{> content content=aside.content contentFooter=footer isMain=false }}
-    </aside>    
+    </aside>
+
 {{/if}}
 </body>
 
