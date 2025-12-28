@@ -23,11 +23,11 @@
 <body class="min-h-screen font-sans grid grid-cols-6 tracking-tight grid-rows-[auto_1fr] text-normal">
 
 {{#if (eq layout "E")}}
-    <header class="bg-header h-[10.5rem] pl-content pt-page-y px-page-x row-start-1 col-start-3 col-span-4 text-justify flex flex-col gap-2">
+    <header class="bg-header h-[10.5rem] pl-photo pt-page-y px-page-x row-start-1 col-start-3 col-span-4 text-justify flex flex-col gap-2">
         {{> header name=name briefDescription=briefDescription contact=contact}}
     </header>  
 
-    <main class="col-span-4 col-start-3 row-start-2 pb-page-y pr-page-x pt-content pl-content bg-main">
+    <main class="col-span-4 col-start-3 row-start-2 pb-page-y pr-page-x pt-photo pl-content bg-main">
         {{> content content=main.content isMain=true }}
     </main>
 
@@ -37,7 +37,7 @@
 
 {{else}}
 
-    <header class="bg-header pb-content pt-page-y px-page-x col-span-6 text-justify flex flex-col gap-2">
+    <header class="bg-header pb-content mb-content pt-page-y px-page-x col-span-6 text-justify flex flex-col gap-2">
         {{> header name=name briefDescription=briefDescription contact=contact}}
     </header>  
 

@@ -24,6 +24,7 @@ module.exports = {
         'page-x': 'var(--padding-page-x)',
         'page-y': 'var(--padding-page-y)',
         content: 'var(--padding-content)',
+        photo: 'var(--padding-photo)',
       },
       borderRadius: {
         'all-headers': 'var(--rounded-all-headers)',
