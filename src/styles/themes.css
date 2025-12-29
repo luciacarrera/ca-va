@@ -14,6 +14,10 @@
   --bg-footer: 0 0 0 / 0;
 
   /* text colors */
+  --text-name: 31 41 55;
+  --text-brief-description: 31 41 55;
+  --text-main-headers: 31 41 55;
+  --text-aside-headers: 31 41 55;
   --text-normal: 31 41 55;
   --text-footer: 30 41 59;
 
@@ -47,7 +51,8 @@
   --bg-bold: 21 128 61 / 0.5;
 
   /** content padding **/
-  --padding-content: 32px;
+  --padding-content-x: 32px;
+  --padding-content-y: 32px;
 }
 
 [data-theme='grass-headers'] {
@@ -66,4 +71,36 @@
 
   /** width **/
   --width-headers: 100%;
+}
+
+[data-theme='fun-headers'] {
+  /* background colors */
+  --bg-aside: 0 0 0 / 0;
+  --bg-main: 0 0 0 / 0;
+  --bg-header: 0 0 0 / 0;
+
+  /* section text bg colors */
+  --bg-name: 246 55 125 / 1;
+  --bg-brief-description: 255 182 70 / 1;
+  --bg-main-headers: 246 55 125 / 1;
+  --bg-aside-headers: 246 55 125 / 1;
+  --bg-bold: 21 128 61 / 0.5;
+  --bg-footer: 0 0 0 / 0;
+
+  /* text colors */
+  --text-name: 255 255 255;
+  --text-main-headers: 255 255 255;
+  --text-aside-headers: 255 255 255;
+  --text-brief-description: 51 51 56;
+  --text-normal: 51 51 56;
+  --text-footer: 51 51 56;
+
+  /** width **/
+  --width-name: fit-content; /* adjust to content */
+  --width-brief-description: fit-content;
+  --width-headers: 100%;
+
+  /** content padding **/
+  --padding-content-x: 12px;
+  --padding-content-y: 12px;
 }

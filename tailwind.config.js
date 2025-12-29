@@ -18,8 +18,14 @@ module.exports = {
         bold: 'rgb(var(--bg-bold))',
         footer: 'rgb(var(--bg-footer))',
         /* text colors */
-        normal: 'rgb(var(--text-normal) / <alpha-value>)',
-        soft: 'rgb(var(--text-footer) / <alpha-value>)',
+        tname: 'rgb(var(--text-name) / <alpha-value>)',
+        'tbrief-description':
+          'rgb(var(--text-brief-description) / <alpha-value>)',
+        'tmain-headers': 'rgb(var(--text-main-headers) / <alpha-value>)',
+        'taside-headers': 'rgb(var(--text-aside-headers) / <alpha-value>)',
+        tnormal: 'rgb(var(--text-normal) / <alpha-value>)',
+        tnormal: 'rgb(var(--text-normal) / <alpha-value>)',
+        tfooter: 'rgb(var(--text-footer) / <alpha-value>)',
       },
       spacing: {
         'page-x': 'var(--padding-page-x)',

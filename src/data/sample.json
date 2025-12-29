@@ -1,11 +1,10 @@
 {
   "language": "en",
-  "theme": "grass-headers",
+  "theme": "fun-headers",
   "layout": "T",
   "name": "Princess Daisy",
   "briefDescription": "Race car driver.",
-
-  "footer": "Designed with CA-VA templates, prioritizing accessibility.",
+  "footer": "Designed with CA-VA templates.",
   "contact": [
     {
       "icon": { "src": "assets/email.svg", "alt": "Email" },

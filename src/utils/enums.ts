@@ -1,4 +1,9 @@
-export type Theme = 'default' | 'grass-aside' | 'grass-headers';
-export const themes: Theme[] = ['default', 'grass-aside', 'grass-headers'];
-export type Layout = 'E' | 'F';
-export const layouts: Layout[] = ['E', 'F'];
+export type Theme = 'default' | 'grass-aside' | 'grass-headers' | 'fun-headers';
+export const themes: Theme[] = [
+  'default',
+  'grass-aside',
+  'grass-headers',
+  'fun-headers',
+];
+export type Layout = 'T' | 'F';
+export const layouts: Layout[] = ['T', 'F'];
