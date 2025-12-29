@@ -16,6 +16,13 @@ Making curriculums cute without forgetting about all our visually impaired inter
 4. If you wish to include a photo add it to the `out/assets` folder and add pathname to `sample.json`.
 5. Execute `npm run pdf`
 
+## Available layouts
+
+The information is divided into a header, a main and an aside. There are two available layouts "F" and "T" which coincidentally are the letters that seem to be formed by the invisible divisions in each layout.
+
+![T layout](./src/assets/layout_T.png)
+![F layout](./src/assets/layout_F.png)
+
 ## How to make your own theme
 
 1. Go to `styles/themes.css`
@@ -33,8 +40,8 @@ Variables available for modification:
 | --bg-aside-headers        | bg-aside-headers       | changes headers in aside content's background colour |
 | --bg-name                 | bg-name                | changes your name's background colour                |
 | --bg-brief-description    | bg-brief-description   | changes your brief description's background colour   |
-| --text-normal             | text-text              | changes all the normal text's colour                 |
-| --text-footer             | text-text-footer       | changes the footer's text colour                     |
+| --text-normal             | text-normal            | changes all the normal text's colour                 |
+| --text-soft               | text-soft              | changes the footer's text colour                     |
 | --padding-content         | pl-content, pr-content | changes padding between aside and main content       |
 | --rounded-all-headers     | rounded-all-headers    | changes rounded corners in all headers               |
 | --width-name              | w-name                 | changes name's width                                 |
