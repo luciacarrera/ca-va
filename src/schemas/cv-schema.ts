@@ -1,12 +1,17 @@
 import { assetSchema } from './asset-schema';
 import { contactSchema } from './contact-schema';
 import { contentSchema } from './content-schema';
+import { layouts, themes } from '../utils/enums';
 
 export const cvSchema = {
   type: 'object',
   additionalProperties: false,
   properties: {
-    layout: { type: 'string', enum: ['E', 'T'] },
+    theme: {
+      type: 'string',
+      enum: themes,
+    },
+    layout: { type: 'string', enum: layouts },
     language: { type: 'string' },
     name: { type: 'string' },
     briefDescription: { type: 'string' },

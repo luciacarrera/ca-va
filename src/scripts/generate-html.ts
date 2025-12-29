@@ -3,9 +3,21 @@ import path from 'node:path';
 import Handlebars from 'handlebars';
 import { stripPrinceUnsupportedCss } from '../utils/strip-prince-unsupported-css';
 import { assertValidCvInformation } from '../utils/validate-json';
+import safeParser from 'postcss-safe-parser';
+import postcss from 'postcss';
+import { Theme } from '../utils/enums';
 
 Handlebars.registerHelper('isArray', (value) => Array.isArray(value));
 Handlebars.registerHelper('eq', (a, b) => a === b);
+
+// function setTheme(theme: Theme, tailwindCss: string) {
+//   const tailwindRoot = postcss().process(tailwindCss, {
+//     parser: safeParser,
+//   }).root;
+//   if (theme !== 'default') {
+//     document.documentElement.setAttribute('data-theme', theme);
+//   }
+// }
 
 async function buildTailwindCss(): Promise<string> {
   const cleanTailwindCssPath = await stripPrinceUnsupportedCss();
@@ -50,14 +62,17 @@ async function main() {
 
   await registerPartials();
 
-  const [templateSrc, dataSrc, tailwindCss] = await Promise.all([
+  const [templateSrc, dataSrc] = await Promise.all([
     fs.readFile(templatePath, 'utf8'),
     fs.readFile(dataPath, 'utf8'),
-    buildTailwindCss(),
   ]);
 
   const data = JSON.parse(dataSrc) as Record<string, unknown>;
   assertValidCvInformation(data);
+
+  const theme = (data.theme as Theme) || 'default';
+  console.log(`🖌  Using theme: ${theme}`);
+  const tailwindCss = await buildTailwindCss();
 
   // Ensure out/ exists
   await fs.mkdir(path.dirname(outputPdfPath), { recursive: true });

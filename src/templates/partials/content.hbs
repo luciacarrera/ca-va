@@ -1,16 +1,17 @@
-<div class="flex flex-col h-full">
-          {{#if profilePhoto}}
-        <div class="flex justify-center pb-photo">
-        {{> photo photo=profilePhoto}}
-        </div>
-        {{/if}}
-  <div class="flex flex-col justify-between h-full">
+{{#if profilePhoto}}
+    <div class="flex justify-center pb-photo">
+      {{> photo photo=profilePhoto}}
+    </div>
+{{/if}}
 
-  {{#each content}} {{> section section=this isMain=../isMain}} {{/each}} 
+<div class="flex flex-col justify-between h-full ">
 
-  {{#if contentFooter }}
+{{#each content}} {{> section section=this isMain=../isMain}} {{/each}} 
+
+{{#if contentFooter }}
   <footer class="text-xs text-justify text-footer">
     {{{ contentFooter }}}
   </footer>
-  {{/if}}
-</div>
+{{/if}}
+
+</div>  

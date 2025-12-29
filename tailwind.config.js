@@ -23,7 +23,8 @@ module.exports = {
       spacing: {
         'page-x': 'var(--padding-page-x)',
         'page-y': 'var(--padding-page-y)',
-        content: 'var(--padding-content)',
+        'content-x': 'var(--padding-content-x)',
+        'content-y': 'var(--padding-content-y)',
         photo: 'var(--padding-photo)',
       },
       borderRadius: {

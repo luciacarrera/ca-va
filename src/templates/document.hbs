@@ -20,7 +20,7 @@
 
 </head>
 
-<body class="min-h-screen font-sans grid grid-cols-6 tracking-tight grid-rows-[auto_1fr] text-normal">
+<body data-theme="{{theme}}" class="min-h-screen font-sans grid grid-cols-6 tracking-tight grid-rows-[auto_1fr] text-normal">
 
 {{#if (eq layout "E")}}
 
@@ -28,25 +28,25 @@
         {{> header name=name briefDescription=briefDescription contact=contact}}
     </header>  
 
-    <main class="col-span-4 col-start-3 row-start-2 pb-page-y pr-page-x pt-photo pl-content bg-main">
+    <main class="col-span-4 col-start-3 row-start-2 pb-page-y pr-page-x pt-photo pl-content-x bg-main">
         {{> content content=main.content isMain=true }}
     </main>
 
-    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pr-content pt-page-y pb-page-y pl-page-x bg-aside">
+    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pr-content-x pt-page-y pb-page-y pl-page-x bg-aside">
         {{> content content=aside.content contentFooter=footer isMain=false profilePhoto=photo }}
     </aside>
 
 {{else}}
 
-    <header class="bg-header pb-content pt-page-y px-page-x col-span-6 grid grid-cols-6">
+    <header class="bg-header pb-content-y pt-page-y px-page-x col-span-6 grid grid-cols-6">
         {{> header name=name briefDescription=briefDescription contact=contact profilePhoto=photo}}
     </header>  
 
-    <main class="col-span-4 col-start-3 row-start-2 pt-content pl-content pb-page-y pr-page-x bg-main">
+    <main class="col-span-4 col-start-3 row-start-2 pt-content-y pl-content-x pb-page-y pr-page-x bg-main flex flex-col">
         {{> content content=main.content isMain=true }}
     </main>
 
-    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pt-content pr-content pb-page-y pl-page-x bg-aside">
+    <aside aria-label="{{aside.label}}" class="row-span-2 col-start-1 col-span-2 pt-content-y pr-content-x pb-page-y pl-page-x bg-aside flex flex-col ">
         {{> content content=aside.content contentFooter=footer isMain=false }}
     </aside>
 

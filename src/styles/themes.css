@@ -6,21 +6,21 @@
   --bg-header: 21 128 61 / 0.5;
 
   /* section text bg colors */
-  --bg-main-headers: 21 128 61 / 0.5; /* green-600 with 50% opacity */
-  --bg-aside-headers: 21 128 61 / 0.5;
   --bg-name: 21 128 61 / 0.5;
   --bg-brief-description: 21 128 61 / 0.5;
+  --bg-main-headers: 21 128 61 / 0.5; /* green-600 with 50% opacity */
+  --bg-aside-headers: 21 128 61 / 0.5;
   --bg-bold: 21 128 61 / 0.5;
+
   /* text colors */
   --text-normal: 31 41 55;
   --text-footer: 30 41 59;
 
-  /** page padding **/
+  /** padding **/
   --padding-page-y: 40px;
   --padding-page-x: 48px;
-
-  /** content padding **/
-  --padding-content: 20px;
+  --padding-content-x: 20px;
+  --padding-content-y: 20px;
   --padding-photo: 20px;
 
   /** border radius **/
@@ -34,51 +34,34 @@
 
 [data-theme='grass-aside'] {
   /* background colors */
-  --photo: 21 128 61 / 0.5; /* green-600 with 50% opacity */
-  --aside: 21 128 61 / 0.5;
-  --main: 0 0 0 / 0; /* invisible */
-  --header: 0 0 0 / 0;
+  --bg-aside: 21 128 61 / 0.5;
+  --bg-main: 0 0 0 / 0;
+  --bg-header: 0 0 0 / 0;
 
   /* section text bg colors */
-  --main-headers: 21 128 61 / 0.5;
-  --aside-headers: 0 0 0 / 0;
-  --name: 0 0 0 / 0;
-  --brief-description: 0 0 0 / 0;
-  --bold: 0 0 0 / 0;
-
-  /* text colors */
-  --text: 31 41 55; /* slate-800 */
-  --text-footer: 30 41 59; /* slate-700 */
+  --bg-name: 0 0 0 / 0;
+  --bg-brief-description: 0 0 0 / 0;
+  --bg-main-headers: 0 0 0 / 0; /* green-600 with 50% opacity */
+  --bg-aside-headers: 0 0 0 / 0;
+  --bg-bold: 21 128 61 / 0.5;
 
   /** content padding **/
-  --content: 32px;
+  --padding-content: 32px;
 }
 
-[data-theme='chunky-grass'] {
+[data-theme='grass-headers'] {
   /* background colors */
-  --aside: 21 128 61 / 0.5;
-  --main: 0 0 0 / 0; /* invisible */
-  --header: 0 0 0 / 0;
+  --bg-aside: 0 0 0 / 0;
+  --bg-main: 0 0 0 / 0;
+  --bg-header: 0 0 0 / 0;
 
   /* section text bg colors */
-  --main-headers: 21 128 61 / 0.5;
-  --aside-headers: 0 0 0 / 0;
-  --name: 0 0 0 / 0;
-  --brief-description: 0 0 0 / 0;
-  --bold: 0 0 0 / 0;
-
-  /* text colors */
-  --text: 31 41 55; /* slate-800 */
-  --text-footer: 30 41 59; /* slate-700 */
-
-  /** content padding **/
-  --content: 32px;
-
-  /** border radius **/
-  --rounded-all-headers: 0rem; /* not rounded */
+  --bg-name: 0 0 0 / 0;
+  --bg-brief-description: 0 0 0 / 0;
+  --bg-main-headers: 21 128 61 / 0.5;
+  --bg-aside-headers: 21 128 61 / 0.5;
+  --bg-bold: 21 128 61 / 0.5;
 
   /** width **/
-  --width-name: fit-content; /* adjust to content */
-  --width-brief-description: fit-content;
-  --width-headers: 100%; /* occupy entire column width */
+  --width-headers: 100%;
 }

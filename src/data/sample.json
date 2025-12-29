@@ -1,12 +1,9 @@
 {
   "language": "en",
-  "layout": "T",
+  "theme": "grass-headers",
+  "layout": "E",
   "name": "Princess Daisy",
   "briefDescription": "Race car driver.",
-  "photo": {
-    "src": "assets/princess-daisy.png",
-    "alt": "Professional photograph of Princess Daisy"
-  },
   "footer": "This CV has been designed using CAVA templates, prioritizing accessibility.",
   "contact": [
     {
