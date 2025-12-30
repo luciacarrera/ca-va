@@ -4,7 +4,7 @@
   "layout": "T",
   "name": "Princess Daisy",
   "briefDescription": "Race car driver.",
-  "footer": "Designed with CA-VA.",
+  "footer": "Designed with CA-VA",
   "contact": [
     {
       "icon": { "src": "assets/email.svg", "alt": "Email" },

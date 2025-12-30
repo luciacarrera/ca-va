@@ -1,24 +1,24 @@
-<div class="flex flex-col gap-0 text-justify">
+<div class="flex flex-col gap-0 text-justify space-y-0">
   <div class="flex justify-between gap-0">
-    <dt class="pl-1 text-sm">
+    <dt class="pl-1 text-sm font-normal text-tsubheaders m-0">
       {{ details.title }}
     </dt>
     {{#if details.date }}
-    <dd class="pr-1 text-sm">
+    <dd class="pr-1 text-sm text-tsubheaders m-0">
       {{ details.date }}
     </dd>
     {{/if}}
   </div>
   {{#if details.subtitle }}
-  <dd class="px-1 text-sm">
+  <dd class="px-1 text-sm text-tsubheaders m-0">
     {{ details.subtitle }}
   </dd>
   {{/if}} 
   {{#if details.nestedDetails }} 
-  {{#each details.nestedDetails }}
-  <dd>
-   {{> simpleDetails details=this }}
-  </dd>
-  {{/each}} 
+    {{#each details.nestedDetails }}
+      <dd class="pt-1">
+        {{> simpleDetails details=this }}
+      </dd>
+    {{/each}} 
   {{/if}}
 </div>

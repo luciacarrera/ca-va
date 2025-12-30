@@ -24,7 +24,7 @@ module.exports = {
         'tmain-headers': 'rgb(var(--text-main-headers) / <alpha-value>)',
         'taside-headers': 'rgb(var(--text-aside-headers) / <alpha-value>)',
         tnormal: 'rgb(var(--text-normal) / <alpha-value>)',
-        tnormal: 'rgb(var(--text-normal) / <alpha-value>)',
+        tsubheaders: 'rgb(var(--text-subheaders) / <alpha-value>)',
         tfooter: 'rgb(var(--text-footer) / <alpha-value>)',
       },
       spacing: {
