@@ -107,7 +107,7 @@
   --padding-content-y: 6px;
 
   /** border radius **/
-  --rounded-name: 0.75rem; /* rounded-md */
-  --rounded-brief-description: 0.375rem; /* rounded-md */
-  --rounded-headers: 0.375rem; /* rounded-md */
+  --rounded-name: 0.75rem;
+  --rounded-brief-description: 0.5rem; /* rounded-md */
+  --rounded-headers: 0.5rem; /* rounded-md */
 }
