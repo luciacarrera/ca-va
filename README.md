@@ -46,7 +46,7 @@ Variables available for modification:
 | --text-normal             | text-normal            | changes all the normal text's colour                 |
 | --text-soft               | text-soft              | changes the footer's text colour                     |
 | --padding-content         | pl-content, pr-content | changes padding between aside and main content       |
-| --rounded-all-headers     | rounded-all-headers    | changes rounded corners in all headers               |
+| --rounded-headers         | rounded-headers        | changes rounded corners in all headers               |
 | --width-name              | w-name                 | changes name's width                                 |
 | --width-brief-description | w-brief-description    | changes brief description's width                    |
 | --width-headers           | w-headers              | changes main and aside headers' width                |
