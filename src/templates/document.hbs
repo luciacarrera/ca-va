@@ -21,7 +21,7 @@
 
 </head>
 
-<body data-theme="{{theme}}" class="min-h-screen font-sans grid grid-cols-6 tracking-tight grid-rows-[auto_1fr] text-normal">
+<body data-theme="{{theme}}" class="min-h-screen font-sans grid grid-cols-6 tracking-normal grid-rows-[auto_1fr] text-tnormal text-xs">
 
 {{#if (eq layout "E")}}
 
@@ -34,14 +34,7 @@
     </main>
 
     <div class="row-span-2 col-start-1 col-span-2 pr-content-x pt-page-y pb-page-y pl-page-x bg-aside flex flex-col gap-4 h-full">
-        
-        <aside aria-label="{{aside.label}}" class="grow flex flex-col">
-            {{> content content=aside.content isMain=false profilePhoto=photo }}
-        </aside>
-
-        <footer class="text-xs text-justify text-soft bg-footer text-tfooter rounded-all-headers p-1">
-            {{{ footer }}}
-        </footer>
+        {{> asideContent }}
     </div>
 
 {{else}}
@@ -55,13 +48,7 @@
     </main>
 
     <div class="row-span-2 col-start-1 col-span-2 pt-content-y pr-content-x pb-page-y pl-page-x bg-aside flex flex-col gap-4 h-full">
-        <aside aria-label="{{aside.label}}" class="grow flex flex-col">
-            {{> content content=aside.content contentFooter=footer isMain=false }}
-        </aside>
-
-        <footer class="text-xs text-justify text-soft bg-footer text-tfooter rounded-all-headers p-1">
-            {{{ footer }}}
-        </footer>
+        {{> asideContent }}
     </div>
 
 {{/if}}

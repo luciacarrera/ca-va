@@ -1,14 +1,14 @@
-<section class="text-sm text-justify leading-4 flex flex-col items-start gap-2">
-  <h2 class="p-1 text-xl font-bold mb-1 rounded-all-headers w-headers {{#if isMain}}text-tmain-headers bg-main-headers{{else}}text-taside-headers bg-aside-headers{{/if}}">
+<section class="text-xs text-justify leading-4 flex flex-col items-start gap-2">
+  <h2 class="p-1 text-xl font-bold mb-1 rounded-headers w-headers {{#if isMain}}text-tmain-headers bg-main-headers{{else}}text-taside-headers bg-aside-headers{{/if}}">
     {{section.title}}
   </h2>
   {{#if section.nestedInformation}}
-  <dl class="flex flex-col w-full">
+  <dl class="flex flex-col w-full gap-2">
     {{#each section.nestedInformation}}
-    {{> nestedDetails details=this}}
+      {{> nestedDetails details=this}}
     {{/each}}
   </dl>
   {{else}}
-  {{> simpleDetails details=section.details}}
+    {{> simpleDetails details=section.details}}
   {{/if}}
 </section>

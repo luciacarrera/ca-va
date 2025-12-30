@@ -35,7 +35,9 @@ module.exports = {
         photo: 'var(--padding-photo)',
       },
       borderRadius: {
-        'all-headers': 'var(--rounded-all-headers)',
+        name: 'var(--rounded-name)',
+        'brief-description': 'var(--rounded-brief-description)',
+        headers: 'var(--rounded-headers)',
       },
       width: {
         name: 'var(--width-name)',

@@ -1,13 +1,13 @@
 {{#if (isArray details)}}
-  <ul class="px-1 list-inside list-disc flex flex-col gap-0">
+  <ul class="pr-1 pl-5 list-outside list-disc flex flex-col gap-1">
     {{#each details}}
-      <li class="text-justify text-sm">
+      <li class="text-justify -indent-1">
         {{this}}
       </li>
     {{/each}}
   </ul>
 {{else}}
-  <p class="px-1 text-justify text-sm">
+  <p class="px-1 text-justify">
     {{details}}
   </p>
 {{/if}}
