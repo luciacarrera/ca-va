@@ -101,6 +101,6 @@
   --width-headers: 100%;
 
   /** content padding **/
-  --padding-content-x: 12px;
-  --padding-content-y: 12px;
+  --padding-content-x: 6px;
+  --padding-content-y: 6px;
 }
