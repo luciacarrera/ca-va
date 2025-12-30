@@ -60,7 +60,6 @@ async function main() {
     '--pdf-subject',
     'Curriculum Vitae in PDF/UA format',
   ]);
-  console.log(root);
   console.log(`✅ PDF/UA generated: ${pdfPath}`);
 }
 
